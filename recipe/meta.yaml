@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: smoothie_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/smoothie_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/smoothie/smoothie_{{ version }}.tar.gz
   sha256: 72060dc6b040cafdaa0d5654d0795447a22ded116d34298b5f9ad6e5d08be48a
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 1002
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -35,16 +34,12 @@ test:
 
 about:
   home: http://www.ral.ucar.edu/staff/ericg
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Functions to smooth two-dimensional fields using FFT and the convolution theorem
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
