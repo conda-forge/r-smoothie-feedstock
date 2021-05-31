@@ -1,4 +1,4 @@
-{% set version = '1.0-1' %}
+{% set version = "1.0-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/smoothie_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/smoothie/smoothie_{{ version }}.tar.gz
-  sha256: 72060dc6b040cafdaa0d5654d0795447a22ded116d34298b5f9ad6e5d08be48a
+  sha256: 086f2ed935ec2a26865f8776da91c7ba4f50988b4e6f535e57cdeb4db62231ab
 
 build:
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
