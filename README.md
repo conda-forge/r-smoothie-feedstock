@@ -1,11 +1,11 @@
-About r-smoothie
-================
+About r-smoothie-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-smoothie-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.ral.ucar.edu/staff/ericg
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-smoothie-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions to smooth two-dimensional fields using FFT and the convolution theorem
 
