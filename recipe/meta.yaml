@@ -1,6 +1,5 @@
 {% set version = "1.0-3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-smoothie
@@ -13,8 +12,7 @@ source:
   sha256: 086f2ed935ec2a26865f8776da91c7ba4f50988b4e6f535e57cdeb4db62231ab
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
