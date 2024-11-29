@@ -1,4 +1,4 @@
-{% set version = "1.0-3" %}
+{% set version = "1.0-4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/smoothie_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/smoothie/smoothie_{{ version }}.tar.gz
-  sha256: 086f2ed935ec2a26865f8776da91c7ba4f50988b4e6f535e57cdeb4db62231ab
+  sha256: 08afb03a3093349a34ce82e6190c094fc36b467ee75179051c295ad51bbd76bb
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
